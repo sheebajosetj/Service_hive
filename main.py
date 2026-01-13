@@ -13,7 +13,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 # -----------------------------
 # CONFIG
 # -----------------------------
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAUEA1ip6xhl1h5yrdLCQCWt5KtO-hdp60"
+os.environ["GOOGLE_API_KEY"] = "GOOGLE_API_KEY"
 
 # LLM (Gemini is ONLY for text generation)
 llm = ChatGoogleGenerativeAI(
