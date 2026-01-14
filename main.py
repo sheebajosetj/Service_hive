@@ -8,12 +8,19 @@ from langchain_core.documents import Document
 from langgraph.graph import StateGraph, END
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
+from dotenv import load_dotenv
 
+load_dotenv()  # <-- THIS IS REQUIRED
+
+
+
+print("GOOGLE_API_KEY =", os.getenv("GOOGLE_API_KEY"))
 
 # -----------------------------
 # CONFIG
 # -----------------------------
-os.environ["GOOGLE_API_KEY"] = "GOOGLE_API_KEY"
+
+
 
 # LLM (Gemini is ONLY for text generation)
 llm = ChatGoogleGenerativeAI(
